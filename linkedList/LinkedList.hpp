@@ -29,10 +29,7 @@ bool LinkedList<T>::isEmpty() const
 template <typename T>
 int LinkedList<T>::size() const
 {
-	/** TODO 
-		Fix this method
-		Should be done now
-	*/
+
 	return(m_size);
 }
 
@@ -50,14 +47,9 @@ bool LinkedList<T>::search(T value) const
 
 				isFound = true;
 			}
-			temp->setNext(temp->getNext());
+			temp = temp->getNext();
 		}
 	}
-
-	/** TODO 
-		Fix this method
-		Should be done now
-	*/
 
 	return(isFound);
 }
@@ -141,11 +133,6 @@ bool LinkedList<T>::removeBack()
 		m_size--;
 		isRemoved = true;
 	}
-
-	/** TODO 
-		Fix this method
-		should be fixed
-	*/
 
 	return(isRemoved);
 }	
