@@ -53,6 +53,7 @@ bool LinkedList<T>::search(T value) const
 
 	/** TODO 
 		Fix this method
+		Should be done now
 	*/
 
 	return(isFound);
